@@ -1,0 +1,15 @@
+name = "web-img-diff"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-06-09"
+
+[vars]
+NODE_VERSION = "20"
+
+[dev]
+port = 8788
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
